@@ -1,4 +1,4 @@
-<h1>Sign Up</h1>
+<h1>Sign Up!!!</h1>
 
 <%= form_with(model: @user, local: true) do |form| %>
     <% if @user.errors.any? %>
@@ -12,10 +12,7 @@
         </div>
     <% end %>
 
-    <div class="field">
-        <%= form.label :username %>
-        <%= form.text_field :username %>
-    </div>
+
 
     <div class="field">
         <%= form.label :email %>
