@@ -1,11 +1,11 @@
-<%= form_with model: post do |form|%>
+<%= form_with model: @post do |form|%>
     <div>
         <%= form.label :title %>
-        <%= form.text_field :title%>
+        <%= form.text_field :title %>
     </div>
     <div>
-        <%= form.label :body %>
-        <%= form.text_field :body %>
+        <%= form.label :body%>
+        <%= form.text_area :body, cols: 60, rows: 5, placeholder:"The secret message here..." %>
     </div>
     <div>
         <%= form.submit %>

@@ -1,0 +1,8 @@
+<div class=post-wrapper>
+    <h1><%= @post.title %></h1>
+    <p><%= @post.body %></p>
+
+    <% if user_signed_in? %>
+        <p>Posted by: <%= @post.user.username %></p>
+    <% end %>
+</div>
