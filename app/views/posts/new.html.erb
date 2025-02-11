@@ -4,10 +4,12 @@
         <%= form.text_field :title %>
     </div>
     <div>
-        <%= form.label :body%>
-        <%= form.text_area :body, cols: 60, rows: 5, placeholder:"The secret message here..." %>
+        <%= form.label :body %>
+        <%= form.text_area :body, cols: 60, rows: 5, placeholder:"Enter the content of your post here..." %>
     </div>
     <div>
+        <%= form.hidden_field :user_id, value: current_user.id %>
         <%= form.submit %>
     </div>
 <% end %>
+<%= link_to 'Back', posts_path %>
